@@ -34,11 +34,17 @@
 	.therow:nth-child(odd) {
 		background-color: #FFFFFF;
 	}
+	.error{
+		background-color: red;
+		color: #FFFFFF;
+		font-weight: bold;
+	}
 	
 
 </style>
 <div>
 	<table>
+		<caption class="error">{{ErrorDescription}}</caption>
 		<tr id="{{SymbolName}}tr">
 			<th class="colheader">PI Tag or Attribute</th>
 			<th class="colheader">Value</th>
