@@ -1,0 +1,53 @@
+<style>
+	table{
+		table-layout: auto;
+	}
+	
+	#{{SymbolName}}tr{
+		background-color: {{config.HeaderColor}};
+		color: #FFFFFF;
+	}
+	
+	.colheader{
+		font-weight: bold;
+		padding:5px;
+		width: 20px;
+		border: 1px solid #dddddd;
+	}
+	
+	.tabledata {
+		border: 1px solid #dddddd;
+		padding:0px 5px 0px;
+		white-space:nowrap;
+		color: #000000;
+		font-weight: normal;
+	}
+	.tabledata:first-child{
+		font-weight: bold;
+		white-space:nowrap;
+		
+	}
+	
+	.therow:nth-child(even) {
+		background-color: #dddddd;
+	}
+	.therow:nth-child(odd) {
+		background-color: #FFFFFF;
+	}
+	
+
+</style>
+<div>
+	<table>
+		<tr id="{{SymbolName}}tr">
+			<th class="colheader">PI Tag or Attribute</th>
+			<th class="colheader">Value</th>
+			<th class="colheader">Timestamp</th>
+		</tr>
+		<tr ng-repeat = 'val in Values' class="therow">
+			<td class="tabledata">{{Label}}</td>
+			<td class="tabledata">{{val.Value}}</td>
+			<td class="tabledata">{{val.Time}}</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,42 @@
+<style>
+	.buttons{
+		background-color: green;
+		color: white;
+		padding: 5px;
+		margin-top: 5px;
+		margin-bottom:5px;
+		margin-left:auto;
+		margin-right: auto;
+		display: block;
+	}
+	.names{
+		color:white;
+		font-size:90%;
+	}
+	.inputs{
+		margin-top: 5px;
+		margin-bottom:5px;
+		margin-left:auto;
+		margin-right: auto;
+	}
+	
+	
+</style>
+
+<ul kendo-panel-bar class="t-side-panel-bgcolor" style="font-size: 14px;"> 
+	<li class="k-state-active"> 
+		<span class="panel-bar-label-no-wrap">Configuration</span>
+		<div class="config-option-single-row" style="margin:10px 20px; font-size: 14px;"> 
+			<div class="config-option-ie11-overflow-fix"> 
+				<div style="width: 85%; margin: 10px 0 15px 20px;">
+					<pv-color-picker colorkeyword="Header Color", ng-model="config.HeaderColor">
+					</pv-color-picker>
+				</div>
+			</div>
+			
+			
+		</div> 
+	</li>
+	
+</ul>
+
