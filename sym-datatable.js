@@ -36,12 +36,19 @@
 
 		function dataUpdate(data){
 			if(!data) return;
-			
+			console.log(data)
 			scope.Values=data.Data[0].Values;
+			if (data.Data[0].ErrorDescription){
 
+			}
 			//sporadic update data
 			if(data.Data[0].Label){
 				scope.Label=data.Data[0].Label;
+			}
+			if (data.Data[0].ErrorDescription){
+				scope.ErrorDescription=data.Data[0].ErrorDescription;
+			}else{
+				scope.ErrorDescription="";
 			}
 		}
 		
