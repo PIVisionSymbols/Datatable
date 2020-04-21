@@ -38,9 +38,7 @@
 			if(!data) return;
 		
 			scope.Values=data.Data[0].Values;
-			if (data.Data[0].ErrorDescription){
-
-			}
+			
 			//sporadic update data
 			if(data.Data[0].Label){
 				scope.Label=data.Data[0].Label;
